@@ -1,0 +1,11 @@
+{
+  "name": "nhs-hybrid-ui",
+  "version": "1.1.1",
+  "description": "An additional set of clean UI components on top of bootstrap",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jake Jenkins",
+  "license": "ISC"
+}

@@ -1,0 +1,45 @@
+.nhs-light-blue {
+  background-color: #ccdff1;
+}
+.nhs-blue {
+  background-color: #005eb8 !important;
+  color: #fff;
+}
+
+.nhs-dark-blue {
+  background: #003087;
+  color: #fff;
+}
+
+.nhs-light-green {
+  background-color: #ccead7;
+}
+.nhs-green {
+  background-color: #009639 !important;
+  color: #fff;
+}
+
+.nhs-light-yellow {
+  background-color: #fef9cc;
+}
+.nhs-yellow {
+  background-color: #fae100 !important;
+  color: #000 !important;
+}
+
+.nhs-light-red {
+  background-color: #f8d4d2;
+}
+
+.nhs-red {
+  background-color: #da291c !important;
+  color: #fff;
+}
+
+.nhs-light-grey {
+  background-color: #d9dde0;
+}
+.nhs-grey {
+  background-color: #425563 !important;
+  color: #fff;
+}

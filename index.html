@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" type="text/css">
+    <link rel="stylesheet" href="/css/nhs-components.css" type="text/css">
+    <link rel="stylesheet" href="/css/nhs-colours.css" type="text/css">
+    <title>NHS UI Components</title>
+    <style>
+        .container {
+            max-width: 1400px;
+            margin: auto;
+        }
+
+        code {
+            background: #E8EDEE;
+            padding: 15px;
+            display: block;
+            border-radius: 10pt;
+            margin-bottom: 50px;
+            max-height: 300px;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+        <div>
+            <img src="/nhs-logo.png">
+        </div>
+        <div>
+        UI Components
+        <!-- You can add div's here -->
+    </div>
+        <div>
+            v1.1.1
+        </div>
+    </div>
+    </header>
+
+    <main class="container">
+
+<section>
+    <h2>Add Styles</h2>
+    <p class="nhs-alert-success">These styles can be used independantly, or on top of a framework such as bootstrap.</p>
+    <p>Add to head:<br>
+        <code>
+        &lt;link rel="stylesheet" href="https://nhs-ui.pages.dev/nhs.css"&gt;
+        </code>
+    </p>
+    <p>Add at the bottom of body:<br>
+        <code>
+        &lt;script src="https://nhs-ui.pages.dev/nhs.js"&gt;&lt;/script&gt;
+    </code>
+</p>
+</section>
+
+<section>
+    <h2>Automatic Styles</h2>
+    <ul>
+        <li>NHS Font</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Boilerplate</h2>
+    <p>text</p>
+</section>
+
+
+
+<section>
+    <h3>Colours</h3>
+    <ul>
+        <li>nhs-blue</li>
+        <li>nhs-bright-blue</li>
+        <li>nhs-dark-blue</li>
+        <li>nhs-dark-grey</li>
+        <li>nhs-light-grey</li>
+        <li>nhs-green</li>
+        <li>nhs-red</li>
+        <li>nhs-yellow</li>
+    </ul>
+</section>
+
+
+<section>
+    <h3>.nhs-box</h3>
+    <p>A box used to display key information on a page.</p>
+    <div class="nhs-box">
+        <header>Box Title</header>
+            <p>Box Text</p>
+    </div>
+    <code>
+        &lt;div class="nhs-box"&gt;</div>
+        <div>&lt;header&gt;Box Title&lt;/header&gt;</div>
+        <div>&lt;p&gt;Box Text&lt;/p&gt;</div>
+        <div>&lt;/div&gt;</div>
+    </code>
+    <div class="nhs-box nhs-light-green">
+        <header class="nhs-green">Box Title</header>
+            <p>Box Text</p>
+    </div>
+    <code>
+        &lt;div class="nhs-box nhs-light-green"&gt;</div>
+            <div>&lt;header class="nhs-green"&gt;Box Title&lt;/header&gt;</div>
+            <div>&lt;p&gt;Box Text&lt;/p&gt;</div>
+            <div>&lt;/div&gt;</div>
+    </code>
+    <div class="nhs-box nhs-light-yellow">
+        <header class="nhs-yellow">Box Title</header>
+            <p>Box Text</p>
+    </div>    
+    <code>&lt;div class="nhs-box nhs-light-yellow"&gt;</div>
+            <div>&lt;header class="nhs-yellow"&gt;Box Title&lt;/header&gt;</div>
+            <div>&lt;p&gt;Box Text&lt;/p&gt;</div>
+            <div>&lt;/div&gt;</div>
+    </code>            
+</section>
+
+<section>
+    <h3>.nhs-btn</h3>
+    <p>There are three button sizes.</p>  <p><span class="tags bg-green-5">Tip</span>The default colour is blue, but this can be changed with a bg-color class.</p>
+        <a href="/" class="nhs-btn-sm">Small Button</a>
+        <a href="/" class="nhs-btn nhs-dark-blue">Button</a>
+        <a href="/" class="nhs-btn-md nhs-grey">Medium Button</a>
+        <a href="/" class="nhs-btn-lg nhs-green">Large Button</a>
+        <br />
+        <code>
+            <h5>Small Button</h5>
+            <div>&lt;a href="/" class="<b>nhs-btn-sm</b>"&gt;Small Button&lt;/a&gt;</div>
+            <br>
+            <h5>Button (in dark blue)</h5>
+            <div>&lt;a href="/" class="<b>nhs-btn nhs-dark-blue</b>"&gt;Button&lt;/a&gt;</div>
+            <br>
+            <h5>Medium Button (in grey)</h5>
+            <div>&lt;a href="/" class="<b>nhs-btn-md nhs-grey</b>"&gt;Medium Button&lt;/a&gt;</div>
+            <br>
+            <h5>Large Button (in green)</h5>
+            <div>&lt;a href="/" class="<b>nhs-btn-lg nhs-green</b>"&gt;Large Button&lt;/a&gt;</div>
+        </code>
+</section>
+
+<section>
+    <h3>.nhs-alert</h3>
+    <p>Text</p>
+    <p class="nhs-alert-warning">.nhs-alert-warning (as a p tag class)</p>
+    <span class="nhs-alert-warning">.nhs-alert-warning (as a span class)</span>
+    <br />
+    <p class="nhs-alert-danger">.nhs-alert-danger (as a p tag class)</p>
+    <span class="nhs-alert-danger">.nhs-alert-danger (as a span class)</span>
+    <br />
+    <p class="nhs-alert-success">.nhs-alert-success (as a p tag class)</p>
+    <span class="nhs-alert-success">.nhs-alert-success (as a span class)</span>
+</section>
+
+<section>
+    <h3>.nhs-tag</h3>
+    <p>info</p>
+    <span class="nhs-tag">.nhs-tag</span>
+    <span class="nhs-tag nhs-grey">.nhs-tag .nhs-grey</span>
+    <span class="nhs-tag nhs-green">.nhs-tag .nhs-green</span>
+    
+</section>
+
+<section>
+    <h3>.nhs-tabs</h3>
+    <p>text</p>
+    <div class="tabs">
+        <input type="radio" name="tabs" id="tabone" checked="checked">
+        <label for="tabone">Tab One</label>
+        <div class="tab">
+          <h3>Tab One Content</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        
+        <input type="radio" name="tabs" id="tabtwo">
+        <label for="tabtwo">Tab Two</label>
+        <div class="tab">
+          <h3>Tab Two Content</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        
+        <input type="radio" name="tabs" id="tabthree">
+        <label for="tabthree">Tab Three</label>
+        <div class="tab">
+          <h3>Tab Three Content</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+      </div>
+      <br />
+      <code>
+        <div>&lt;div class="tabs"&gt;</div>
+        <div>&lt;input type="radio" name="tabs" id="tabone" checked="checked"&gt;</div>
+        <div>&lt;label for="tabone"&gt;Tab One&lt;/label&gt;</div>
+        <div>&lt;div class="tab"&gt;</div>
+        <div>&lt;h3&gt;Tab One Content&lt;/h3&gt;</div>
+        <div>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;</div>
+        <div>&lt;/div&gt;</div>
+        <div>&nbsp;</div>
+        <div>&lt;input type="radio" name="tabs" id="tabtwo"&gt;</div>
+        <div>&lt;label for="tabtwo"&gt;Tab Two&lt;/label&gt;</div>
+        <div>&lt;div class="tab"&gt;</div>
+        <div>&lt;h3&gt;Tab Two Content&lt;/h3&gt;</div>
+        <div>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;</div>
+        <div>&lt;/div&gt;</div>
+        <div>&nbsp;</div>
+        <div>&lt;input type="radio" name="tabs" id="tabthree"&gt;</div>
+        <div>&lt;label for="tabthree"&gt;Tab Three&lt;/label&gt;</div>
+        <div>&lt;div class="tab"&gt;</div>
+        <div>&lt;h3&gt;Tab Three Content&lt;/h3&gt;</div>
+        <div>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;</div>
+        <div>&lt;/div&gt;</div>
+        <div>&lt;/div&gt;</div>
+      </code>
+</section>
+
+<section>
+    <h3>.nhs-list</h3>
+    <p>Needs more work.</p>
+</section>
+
+<section>
+    <h3>.nhs-tooltip</h3>
+</section>
+
+<section>
+    <h3>.nhs-table</h3>
+</section>
+</main>
+<footer>
+ABUHB
+</footer>
+</body>
+</html>

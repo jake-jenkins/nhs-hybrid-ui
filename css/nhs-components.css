@@ -1,0 +1,236 @@
+/* Automatic Styles */
+
+@import url("https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap");
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  font-family: "Istok Web", sans-serif;
+  font-size: 1.1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #425563;
+}
+
+/* Box */
+
+.nhs-box {
+  border: solid 1px #fff;
+  border-radius: 5pt 10pt 5pt 10pt;
+  margin: 20px 0px;
+  background: #ccdff1;
+}
+
+.nhs-box header {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 15px 20px;
+  border-radius: 5pt 10pt 0pt 0pt;
+  background: #005eb8;
+  color: #fff;
+}
+
+.nhs-box p {
+  padding: 10px 20px 0px 20px;
+}
+
+/* nhs-btn */
+
+.nhs-btn-sm {
+  padding: 6px 14px 6px 14px;
+  color: white;
+  background: #005eb8;
+  text-decoration: none;
+  border-radius: 5pt 10pt 5pt 10pt;
+  display: inline-block;
+  font-size: 0.9rem;
+  margin: 10px 0px;
+}
+
+.nhs-btn {
+  padding: 8px 16px 8px 16px;
+  color: white;
+  background: #005eb8;
+  text-decoration: none;
+  border-radius: 5pt 10pt 5pt 10pt;
+  display: inline-block;
+  font-size: 1.2rem;
+  margin: 10px 0px;
+}
+
+.nhs-btn-md {
+  padding: 16px 32px 16px 32px;
+  color: white;
+  background: #005eb8;
+  text-decoration: none;
+  border-radius: 5pt 10pt 5pt 10pt;
+  font-size: 1.4rem;
+  display: inline-block;
+  margin: 10px 0px;
+}
+
+.nhs-btn-lg {
+  padding: 24px 50px 24px 50px;
+  color: white;
+  background: #005eb8;
+  text-decoration: none;
+  border-radius: 5pt 10pt 5pt 10pt;
+  font-size: 1.6rem;
+  display: inline-block;
+  margin: 10px 0px;
+}
+
+/* nhs-alert */
+
+.nhs-alert-warning {
+  border: solid 1px #fff;
+  border-radius: 5pt 10pt 5pt 10pt;
+  margin: 20px 0px;
+  padding: 14px 20px;
+  background: #fae100;
+  cursor: default;
+}
+
+.nhs-alert-danger {
+  border: solid 1px #fff;
+  border-radius: 5pt 10pt 5pt 10pt;
+  margin: 20px 0px;
+  padding: 14px 20px;
+  background: #da291c;
+  color: #fff;
+  cursor: default;
+}
+
+.nhs-alert-success {
+  border: solid 1px #fff;
+  border-radius: 5pt 10pt 5pt 10pt;
+  margin: 20px 0px;
+  padding: 14px 20px;
+  background: #009639;
+  color: #fff;
+  cursor: default;
+}
+
+/* nhs-tag */
+
+.nhs-tag {
+  padding: 6px 12px 6px 12px;
+  margin: 2px 4px 2px 2px;
+  display: inline-block;
+  border-radius: 5pt 10pt 5pt 10pt;
+  background: #005eb8;
+  color: #fff;
+  cursor: default;
+}
+
+/* nhs-tabs */
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+}
+.tabs label {
+  order: 1;
+  display: block;
+  padding: 1rem 2rem;
+  margin-right: 0.2rem;
+  cursor: pointer;
+  background: #425563;
+  color: #fff;
+  font-weight: bold;
+  transition: background ease 0.2s;
+  border-radius: 5pt 10pt 0pt 0pt;
+}
+.tabs .tab {
+  order: 99;
+  flex-grow: 1;
+  width: 100%;
+  display: none;
+  padding: 1rem;
+  background: #f1f4f5;
+  border-radius: 0pt 10pt 5pt 10pt;
+}
+.tabs input[type="radio"] {
+  display: none;
+}
+.tabs input[type="radio"]:checked + label {
+  background: #f1f4f5;
+  color: #000;
+}
+.tabs input[type="radio"]:checked + label + .tab {
+  display: block;
+}
+
+/* nhs-list */
+
+/* nhs-tooltip */
+
+/* nhs-table */
+
+/* Layout */
+body > header {
+  background: #005eb8;
+  color: #fff;
+  height: 80px;
+}
+
+header > div {
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+header > div > div {
+  width: 100%;
+}
+
+header > div > div {
+  width: 100%;
+  text-align: center;
+}
+
+header > div > div:nth-child(1) {
+  font-size: 1.8em;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+header > div > div:nth-last-of-type(1) {
+  text-align: end;
+}
+
+main {
+  min-height: Calc(100vh - 145px);
+  padding: 10px;
+  margin: 10px 0px 10px 0px;
+}
+
+main section {
+  margin: 100px 0px 100px 0px;
+}
+
+footer {
+  padding: 10px;
+  background: #425563;
+  min-height: 45px;
+  text-align: center;
+  color: #fff;
+}
+
+/* Some Resets */
+.nhs-btn:hover,
+.nhs-btn-sm:hover,
+.nhs-btn-md:hover,
+.nhs-btn-lg:hover {
+  color: #fff;
+}
