@@ -140,7 +140,7 @@ h5 {
   order: 1;
   display: block;
   padding: 1rem 2rem;
-  margin-right: 0.2rem;
+  margin-right: 0.1rem;
   cursor: pointer;
   background: #425563;
   color: #fff;
@@ -154,14 +154,14 @@ h5 {
   width: 100%;
   display: none;
   padding: 1rem;
-  background: #f1f4f5;
+  background: #e8edee;
   border-radius: 0pt 10pt 5pt 10pt;
 }
 .tabs input[type="radio"] {
   display: none;
 }
 .tabs input[type="radio"]:checked + label {
-  background: #f1f4f5;
+  background: #e8edee;
   color: #000;
 }
 .tabs input[type="radio"]:checked + label + .tab {

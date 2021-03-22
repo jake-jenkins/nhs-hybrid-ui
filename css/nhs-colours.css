@@ -1,14 +1,17 @@
-.nhs-light-blue {
-  background-color: #ccdff1;
-}
 .nhs-blue {
   background-color: #005eb8 !important;
   color: #fff;
 }
-
+.nhs-bright-blue {
+  background: #0072ce;
+  color: #fff;
+}
 .nhs-dark-blue {
   background: #003087;
   color: #fff;
+}
+.nhs-light-blue {
+  background-color: #ccdff1;
 }
 
 .nhs-light-green {

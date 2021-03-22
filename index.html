@@ -15,13 +15,33 @@
         }
 
         code {
-            background: #E8EDEE;
+            background: #212121;
             padding: 15px;
             display: block;
             border-radius: 10pt;
             margin-bottom: 50px;
             max-height: 300px;
             overflow: auto;
+            color: #B2EBF2 !important;
+            display: none;
+        }
+
+        code h5 {
+            color: lightgreen;
+            font-size: 1.2rem;
+        }
+
+        .colour-block {
+            display: flex;
+        }
+        .colour {
+            width: 140px;
+            height: 140px;
+            display: block;
+            margin: 6px;
+            text-align: center;
+            padding-top: 60px;
+            border-radius: 10% 20%;
         }
     </style>
 </head>
@@ -46,16 +66,15 @@
 <section>
     <h2>Add Styles</h2>
     <p class="nhs-alert-success">These styles can be used independantly, or on top of a framework such as bootstrap.</p>
-    <p>Add to head:<br>
         <code>
-        &lt;link rel="stylesheet" href="https://nhs-ui.pages.dev/nhs.css"&gt;
+            <h5>Add inside &lt;head&gt; tag</h5>
+        &lt;link rel="stylesheet" href="https://nhs.pages.dev/nhs.css"&gt;
         </code>
-    </p>
-    <p>Add at the bottom of body:<br>
+
         <code>
-        &lt;script src="https://nhs-ui.pages.dev/nhs.js"&gt;&lt;/script&gt;
-    </code>
-</p>
+            <h5>Add before &lt;/body&gt; tag</h5>
+            <div>&lt;script src="https://nhs.pages.dev/nhs.js"&gt;&lt;/script&gt;</div>
+        </code>
 </section>
 
 <section>
@@ -66,24 +85,35 @@
 </section>
 
 <section>
-    <h2>Boilerplate</h2>
-    <p>text</p>
+    <h2>NHS Colours</h2>
+    <p>Provided by NHS Brand Guidelines, in priority order.  These classes will add background colour to any elements.</p>
+    <div class="colour-block">
+<div class="colour nhs-blue">nhs-blue</div>
+<div class="colour nhs-light-blue">nhs-light-blue</div>
+<div class="colour nhs-bright-blue">nhs-bright-blue</div>
+<div class="colour nhs-dark-blue">nhs-dark-blue</div>
+</div>
+<div class="colour-block">
+    <div class="colour nhs-grey">nhs-grey</div>
+    <div class="colour nhs-light-grey">nhs-light-grey</div>
+</div>
+<div class="colour-block">
+    <div class="colour nhs-green">nhs-green</div>
+    <div class="colour nhs-light-green">nhs-light-green</div>
+</div>
+<div class="colour-block">
+    <div class="colour nhs-yellow">nhs-yellow</div>
+    <div class="colour nhs-light-yellow">nhs-light-yellow</div>
+</div>
+<div class="colour-block">
+    <div class="colour nhs-red">nhs-red</div>
+    <div class="colour nhs-light-red">nhs-light-red</div>
+</div>
 </section>
 
-
-
 <section>
-    <h3>Colours</h3>
-    <ul>
-        <li>nhs-blue</li>
-        <li>nhs-bright-blue</li>
-        <li>nhs-dark-blue</li>
-        <li>nhs-dark-grey</li>
-        <li>nhs-light-grey</li>
-        <li>nhs-green</li>
-        <li>nhs-red</li>
-        <li>nhs-yellow</li>
-    </ul>
+    <h2>Layouts</h2>
+    <p>text</p>
 </section>
 
 
