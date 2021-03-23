@@ -12,6 +12,7 @@
 }
 .nhs-light-blue {
   background-color: #ccdff1;
+  color: #000;
 }
 
 .nhs-light-green {
@@ -21,9 +22,14 @@
   background-color: #009639 !important;
   color: #fff;
 }
+.nhs-dark-green {
+  background: #006747;
+  color: #fff;
+}
 
 .nhs-light-yellow {
   background-color: #fef9cc;
+  color: #000;
 }
 .nhs-yellow {
   background-color: #fae100 !important;
@@ -32,6 +38,7 @@
 
 .nhs-light-red {
   background-color: #f8d4d2;
+  color: #000;
 }
 
 .nhs-red {
@@ -41,8 +48,14 @@
 
 .nhs-light-grey {
   background-color: #d9dde0;
+  color: #000;
 }
 .nhs-grey {
   background-color: #425563 !important;
+  color: #fff;
+}
+
+.nhs-black {
+  background: #231f20;
   color: #fff;
 }

@@ -1,13 +1,15 @@
 /* Automatic Styles */
 
-@import url("https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Istok+Web:wght@200;400;700&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;800&display=swap");
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
 }
 body {
   margin: 0;
-  font-family: "Istok Web", sans-serif;
+  /* font-family: "Istok Web", sans-serif; */
+  font-family: "Open Sans", sans-serif;
   font-size: 1.1rem;
 }
 
@@ -17,6 +19,7 @@ h3,
 h4,
 h5 {
   color: #425563;
+  font-weight: 500;
 }
 
 /* Box */
@@ -44,7 +47,7 @@ h5 {
 /* nhs-btn */
 
 .nhs-btn-sm {
-  padding: 6px 14px 6px 14px;
+  padding: 6px 14px;
   color: white;
   background: #005eb8;
   text-decoration: none;
@@ -55,7 +58,7 @@ h5 {
 }
 
 .nhs-btn {
-  padding: 8px 16px 8px 16px;
+  padding: 10px 20px;
   color: white;
   background: #005eb8;
   text-decoration: none;
@@ -66,7 +69,7 @@ h5 {
 }
 
 .nhs-btn-md {
-  padding: 16px 32px 16px 32px;
+  padding: 14px 30px;
   color: white;
   background: #005eb8;
   text-decoration: none;
@@ -77,7 +80,7 @@ h5 {
 }
 
 .nhs-btn-lg {
-  padding: 24px 50px 24px 50px;
+  padding: 18px 50px;
   color: white;
   background: #005eb8;
   text-decoration: none;
@@ -178,18 +181,13 @@ h5 {
 body > header {
   background: #005eb8;
   color: #fff;
-  height: 80px;
 }
 
 header > div {
-  padding: 5px 10px;
+  padding: 10px 15px;
   display: flex;
   align-items: center;
   height: 100%;
-}
-
-header > div > div {
-  width: 100%;
 }
 
 header > div > div {
@@ -198,33 +196,40 @@ header > div > div {
 }
 
 header > div > div:nth-child(1) {
-  font-size: 1.8em;
-  font-style: italic;
-  display: flex;
-  align-items: center;
-  justify-content: left;
+  font-size: 2.8rem;
+  font-weight: 400;
+  text-align: left;
+  flex-shrink: 1;
+  min-width: 100px;
+}
+
+header > div > div img {
+  margin-right: 8px;
 }
 
 header > div > div:nth-last-of-type(1) {
   text-align: end;
+  flex-shrink: 1;
 }
 
 main {
   min-height: Calc(100vh - 145px);
-  padding: 10px;
-  margin: 10px 0px 10px 0px;
+  padding: 0px 10px;
+  margin: auto;
+  max-width: 1250px;
 }
 
 main section {
-  margin: 100px 0px 100px 0px;
+  padding: 100px 0px 100px 0px;
 }
 
 footer {
-  padding: 10px;
-  background: #425563;
-  min-height: 45px;
+  padding: 15px;
+  background: #d9dde0;
+  min-height: 20px;
   text-align: center;
-  color: #fff;
+  color: #000;
+  font-size: 0.9rem;
 }
 
 /* Some Resets */
