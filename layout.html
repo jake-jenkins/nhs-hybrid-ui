@@ -36,13 +36,9 @@
                 text-decoration: none;
             }
 
-        .container {
+        .nhs-container {
             max-width: 1250px;
             margin: auto;
-        }
-
-        h1, h2, h3 {
-            color: #005eb8;
         }
 
         .nhs-search {
@@ -91,6 +87,16 @@
         .hide-xs {
             display: none;
         }
+
+        .nhs-container {
+            padding: 5px;
+        }
+
+        header nav a, .nhs-user {
+            font-size: 1rem;
+            padding: 5px;
+            margin: 2px;
+        }
     }
 
 
@@ -99,7 +105,7 @@
 <body>
 
 <header>
-    <div class="container">
+    <div class="nhs-container">
         <div>
 <!-- <img src="/nhs-logo.png" alt="NHS Logo" height="30px"> -->
 <a href="/">
@@ -180,7 +186,9 @@
 </main>
 
 <footer>
+    <div class="nhs-container">
     <i class="fas fa-laptop-medical"></i> Clinical Workstation Anywhere (CWSA) © ABUHB 2021.
+</div>
 </footer>
     
 </body>
