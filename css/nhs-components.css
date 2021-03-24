@@ -341,14 +341,15 @@ header > div > div:nth-last-of-type(1) {
 }
 
 main {
-  min-height: Calc(100vh - 145px);
-  padding: 0px 10px;
+  min-height: Calc(100vh - 161px);
+  padding: 20px 10px;
   margin: auto;
   max-width: 1250px;
 }
 
 main section {
   padding: 100px 0px 100px 0px;
+  border-radius: 20pt 40pt;
 }
 
 footer {

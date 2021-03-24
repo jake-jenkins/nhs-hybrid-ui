@@ -84,6 +84,21 @@
     border-radius: 5pt 10pt 0pt 00pt;
     color: #000;
 }
+
+.nhs-fancy {
+    background-image: linear-gradient( 70.6deg,  rgba(172,30,255,1) 0.3%, rgba(65,35,251,1) 55.8%, rgba(35,251,224,1) 105.1% ); 
+}
+
+.nhs-hero {
+    text-align: center;
+    color: #fff;
+    padding: 75px;
+}
+
+.nhs-hero h1 {
+    color: #fff;
+    font-size: 4rem;
+}
         @media only screen and (max-width: 740px) {
 
         .hide-xs {
@@ -123,52 +138,44 @@
                 padding: 10px;
             }
     }
-
-
     </style>
 </head>
 <body>
 
-<header>
+<header class="nhs-blue">
     <div class="nhs-container">
         <div>
-<!-- <img src="/nhs-logo.png" alt="NHS Logo" height="30px"> -->
+
 <a href="/" aria-label="Go to the homepage">
     CWSA
         </a>
     </div>
                 <div class="hide-xs">
                     <div class="nhs-search">
-                        <input type="text" class="form-control" placeholder="123456" aria-label="Patient Search">
+                        <input type="text" class="form-control" placeholder="123456" aria-label="Patient Search">                      
+                    <details>
+                        <summary>
 
-                      
-                                            <!-- Eeek -->
-                        
-                                            <details>
-                                                <summary>
+                            <div class="nhs-search-button nhs-light-grey"><i class="fas fa-chevron-circle-down"></i></div>
 
-                                                    <div class="nhs-search-button nhs-light-grey"><i class="fas fa-chevron-circle-down"></i></div>
-
-                                                  <div class="nhs-modal-overlay"></div>
-                                                </summary>
-                                                <div class="nhs-modal">
-                                                  <div class="nhs-modal-close">
-                                                      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
-                                                  </div>
+                            <div class="nhs-modal-overlay"></div>
+                        </summary>
+                        <div class="nhs-modal">
+                        <div class="nhs-modal-close">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+                            </div>
                                       
-                                                  <div class="nhs-modal-title">
-                                                    <h1>Advanced Search</h1>
-                                                  </div>
-                                                  <div class="nhs-modal-content">
-                                                    <p>
-                                                      Search Form
-                                                    </p>
-                                                  </div>
-                                                </div>
-                                              </details>
-                    
-                                            <!-- /eek -->
-                                            <a class="nhs-search-button nhs-green" type="button" aria-label="Patient Search Button"><i class="fas fa-search"></i></a>
+                            <div class="nhs-modal-title">
+                            <h1>Advanced Search</h1>
+                            </div>
+                            <div class="nhs-modal-content">
+                            <p>
+                            Search Form
+                            </p>
+                            </div>
+                        </div>
+                    </details>
+                    <a class="nhs-search-button nhs-green" type="button" aria-label="Patient Search Button"><i class="fas fa-search"></i></a>
                     </div>
         </div>
         <div>
@@ -203,7 +210,6 @@
     <div class="nhs-mob-bar nhs-grey">
         <div class="nhs-search">
         <input type="text" class="form-control" placeholder="123456" aria-label="Patient Search">
-        <!-- Eeek -->
                         
         <details>
             <summary>
@@ -228,17 +234,21 @@
             </div>
           </details>
 
-        <!-- /eek -->
         <a class="nhs-search-button nhs-green" type="button"><i class="fas fa-search"></i></a>
         </div>
     </div>
 </header>
 
 <main>
-        <h1>Welcome to CWSA</h1>
-        <p>text</p>
 
-       
+       <section class="nhs-hero nhs-fancy">
+           <h1>Clinical Workstation Anywhere</h1>
+           <p>Important information at your fingertips.</p>
+           <a href="" class="nhs-btn-lg nhs-light-grey"><i class="fas fa-pump-medical"></i> Get Started</a>
+       </section>
+
+       <h1>Welcome</h1>
+       <p>text</p>
 
 </main>
 
