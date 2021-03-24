@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | CWSA</title>
     <link rel="stylesheet" href="/css/nhs-components.css">
@@ -53,7 +52,7 @@
                 border-radius: 5px 0px 0px 10px;
                 border-width: 0px;
                 width: 120px;
-                background: rgba(255,255,255,0.7);
+                background: rgba(255,255,255,0.6);
                 font-size: 1.1rem;
                 height: 20px;
             }
@@ -77,26 +76,52 @@
     display: inline-flex;
 }
 
+.nhs-mob-bar {
+    display: none;
+}
+
 .nhs-user {
     border-radius: 5pt 10pt 0pt 00pt;
     color: #000;
 }
-
-        @media only screen and (max-width: 760px) {
+        @media only screen and (max-width: 740px) {
 
         .hide-xs {
             display: none;
         }
 
-        .nhs-container {
-            padding: 5px;
+        header > div {
+            padding: 12px 5px;
+            margin: 0px;
         }
 
         header nav a, .nhs-user {
-            font-size: 1rem;
-            padding: 5px;
+            font-size: 1.2rem;
+            padding: 6px;
             margin: 2px;
         }
+
+        .nhs-mob-bar {
+        display: block;
+        padding: 5px;
+        }
+
+        .nhs-search input {
+            width: 100%
+        }
+
+        main {
+            min-height: Calc(100vh - 200px);
+        }
+
+        .nhs-search-button {
+                border-width: 0px;
+                font-size: 1.1rem;
+                cursor: pointer;
+                height: 20px;
+                width: 20px;
+                padding: 10px;
+            }
     }
 
 
@@ -108,7 +133,7 @@
     <div class="nhs-container">
         <div>
 <!-- <img src="/nhs-logo.png" alt="NHS Logo" height="30px"> -->
-<a href="/">
+<a href="/" aria-label="Go to the homepage">
     CWSA
         </a>
     </div>
@@ -143,25 +168,25 @@
                                               </details>
                     
                                             <!-- /eek -->
-                                            <a class="nhs-search-button nhs-green" type="button"><i class="fas fa-search"></i></a>
+                                            <a class="nhs-search-button nhs-green" type="button" aria-label="Patient Search Button"><i class="fas fa-search"></i></a>
                     </div>
         </div>
         <div>
             <nav class="nhs-flex">
-            <a href="#">
+            <a href="#" aria-label="Go ome">
                 <i class="fas fa-home"></i>
                 </a>
-            <a href="#">
+            <a href="#" aria-label="Go to Ward List">
                 <i class="fas fa-bed"></i>
             </a>
-            <a href="#">
+            <a href="#" aria-label="Go to Caseload List">
                 <i class="fas fa-briefcase-medical"></i>
             </a>
 
             <div class="nhs-dropdown">
                 
             <span class="nhs-user nhs-light-grey">
-                <i class="fas fa-id-card-alt hide-xs"></i>&nbsp;
+                <i class="fas fa-id-card-alt hide-xs">&nbsp;</i>
                 jake
             </span>
                 <div class="nhs-dropdown-content-right">
@@ -174,6 +199,38 @@
         </nav>
         </div>
 
+    </div>
+    <div class="nhs-mob-bar nhs-grey">
+        <div class="nhs-search">
+        <input type="text" class="form-control" placeholder="123456" aria-label="Patient Search">
+        <!-- Eeek -->
+                        
+        <details>
+            <summary>
+
+                <div class="nhs-search-button nhs-light-grey"><i class="fas fa-chevron-circle-down"></i></div>
+
+              <div class="nhs-modal-overlay"></div>
+            </summary>
+            <div class="nhs-modal">
+              <div class="nhs-modal-close">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+              </div>
+  
+              <div class="nhs-modal-title">
+                <h1>Advanced Search</h1>
+              </div>
+              <div class="nhs-modal-content">
+                <p>
+                  Search Form
+                </p>
+              </div>
+            </div>
+          </details>
+
+        <!-- /eek -->
+        <a class="nhs-search-button nhs-green" type="button"><i class="fas fa-search"></i></a>
+        </div>
     </div>
 </header>
 
