@@ -176,7 +176,38 @@ h5 {
 /* nhs-tooltip */
 
 /* nhs-table */
+.nhs-table {
+  border-collapse: collapse;
+  width: 100%;
+  border-width: 1px;
+  border-color: #425563;
+  border-bottom-style: solid;
+}
 
+.nhs-table td,
+.nhs-table th {
+  padding: 12px;
+}
+
+.nhs-table tr:nth-child(even) {
+  background-color: #e8edee;
+}
+
+.nhs-table tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+.nhs-table tr:hover {
+  background-color: #d8f0fc;
+}
+
+.nhs-table th {
+  padding-top: 16px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #425563;
+  color: white;
+}
 /* nhs-dropdown */
 .nhs-dropdown {
   position: relative;
