@@ -1,6 +1,5 @@
 /* Automatic Styles */
 
-/* @import url("https://fonts.googleapis.com/css2?family=Istok+Web:wght@200;400;700&display=swap"); */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;800&display=swap");
 html {
   line-height: 1.15;
@@ -119,6 +118,22 @@ h5 {
   background: #009639;
   color: #fff;
   cursor: default;
+}
+
+/* nhs-hero */
+.nhs-hero {
+  text-align: center;
+  color: #fff;
+  height: 350px;
+  display: block;
+  border-radius: 10pt 20pt;
+  padding-top: 150px;
+  margin-bottom: 100px;
+}
+
+.nhs-hero > h1 {
+  color: #fff;
+  font-size: 4rem;
 }
 
 /* nhs-tag */
