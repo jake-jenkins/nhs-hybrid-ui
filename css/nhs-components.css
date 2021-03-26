@@ -175,6 +175,33 @@ h5 {
 
 /* nhs-tooltip */
 
+.nhs-tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.nhs-tooltip .nhs-tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 5pt 10pt 5pt 10pt;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 110%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.nhs-tooltip:hover .nhs-tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
 /* nhs-table */
 .nhs-table {
   border-collapse: collapse;
