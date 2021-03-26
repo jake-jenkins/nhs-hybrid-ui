@@ -150,11 +150,11 @@ h5 {
 
 /* nhs-tabs */
 
-.tabs {
+.nhs-tabs {
   display: flex;
   flex-wrap: wrap;
 }
-.tabs label {
+.nhs-tabs label {
   order: 1;
   display: block;
   padding: 1rem 2rem;
@@ -166,7 +166,7 @@ h5 {
   transition: background ease 0.2s;
   border-radius: 5pt 10pt 0pt 0pt;
 }
-.tabs .tab {
+.nhs-tabs .tab {
   order: 99;
   flex-grow: 1;
   width: 100%;
@@ -175,14 +175,14 @@ h5 {
   background: #e8edee;
   border-radius: 0pt 10pt 5pt 10pt;
 }
-.tabs input[type="radio"] {
+.nhs-tabs input[type="radio"] {
   display: none;
 }
-.tabs input[type="radio"]:checked + label {
+.nhs-tabs input[type="radio"]:checked + label {
   background: #e8edee;
   color: #000;
 }
-.tabs input[type="radio"]:checked + label + .tab {
+.nhs-tabs input[type="radio"]:checked + label + .tab {
   display: block;
 }
 
