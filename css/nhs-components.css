@@ -259,7 +259,7 @@ h5 {
   position: absolute;
   background-color: #e8edee;
   min-width: 160px;
-  /* padding: 2px 4px; */
+  padding: 2px 4px;
   z-index: 1;
   border-radius: 5% 10%;
 }
